@@ -1,0 +1,31 @@
+.slider {
+	width: 384px; /* длинна картинки 128 , для 3 картинок = 384*/
+	height: 128px;
+	border: 5px solid black;
+	margin: 50px auto;
+	overflow: hidden; /* что бы картинки, которые вылазили за блок скрывались*/
+}
+.row {
+	background: lightgreen;
+	width: 768px; /* всего 6 картинок по этому 128 * 6*/
+	position: relative;
+	left: 0; /*что бы 1й слайд не двигался рывком*/
+	transition: all ease 1s; /*замедление анимации*/
+}
+.row img {
+	float: left; /* Так как картинки имеют встроенные margin = 4px, мы применяем float что бы картинки выстроились в 1 строку*/
+}
+.row::after {
+	content: ""; /*После float - left блок схлопнулся и его высота стала равна 0, мы применяем очистку потока данным способом*/
+	display: block;
+	clear: both;
+}
+.btn {
+	display: flex;
+}
+#turn__left {
+	margin: 60px auto;
+	width: 200px;
+	height: 60px;
+	text-align: center;
+}
