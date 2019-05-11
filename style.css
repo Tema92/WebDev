@@ -1,3 +1,7 @@
+body {
+	font-family: "Times New Roman", sans-serif;
+}
+
 .slider {
 	width: 384px; /* длинна картинки 128 , для 3 картинок = 384*/
 	height: 128px;
