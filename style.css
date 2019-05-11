@@ -6,7 +6,7 @@
 	overflow: hidden; /* что бы картинки, которые вылазили за блок скрывались*/
 }
 .row {
-	background: lightgreen;
+	background: darkcyan;
 	width: 768px; /* всего 6 картинок по этому 128 * 6*/
 	position: relative;
 	left: 0; /*что бы 1й слайд не двигался рывком*/
